@@ -1,0 +1,379 @@
+body {
+    font-family: Verdana, serif;
+    background-color: lightgray;
+    box-sizing: border-box;
+}
+
+
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    border-bottom: 2px solid black;
+    background-image: url("https://www.magnusonsod.com/wp-content/uploads/2018/04/grass-banner.jpg");
+    height: 70px;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+    float: left;
+    top: 0; 
+}
+
+
+.nav { 
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+
+
+
+.navitem{
+  list-style: none;
+  margin-right: 1rem;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 5px;
+  cursor: pointer;
+  
+}
+
+.navitem a {
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 5px;
+  color: green;
+  border: 2px solid black;
+  background-color: lightgray;
+}
+
+
+
+.navitem a:hover {
+    background-color: #ddd;
+    color: black;
+      
+
+}
+
+.navitem a:active {
+        background-color: #04AA6D;
+        color: white;
+        
+}
+
+button {
+    background-color: lightgray;
+    font-size: 12px;
+    padding: 5px;
+    border-radius: 5%;
+    color: green;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+button:active {
+    background-color: lightgreen;
+    color: white;
+    cursor: pointer;
+}
+
+
+.banner {
+    background-image: url("https://www.magnusonsod.com/wp-content/uploads/2018/04/grass-banner.jpg");
+    background-size: cover;
+    background-repeat: norepeat;
+    height: 300px;
+    width: 100%;
+    padding-top: 35px;
+    
+}
+
+.banner h1 {
+    color: green;
+    text-decoration: underline green;
+    text-align: center;
+    font-size: 30px;
+    padding: 50px 0px 100px 0px;
+    
+}
+
+.mission-container {
+   
+    width: 100%;
+    border-bottom: 1px solid black;
+    
+}
+
+.left {
+    color: black;
+    text-align: center;
+    width: 50%;
+    margin: 50px auto;
+    
+
+}
+
+.left h2 {
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+.left p {
+    font-size: 15px;
+
+}
+
+.right {
+
+    background-color: green;  
+    
+}
+
+.right img {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    padding: 20px 0px 20px 20px;
+    
+   
+}
+
+#products {
+    border-bottom: 1px solid black;
+}
+
+.products-container {
+    margin-top: 50px;
+    
+}
+
+.products-container h2 {
+    font-size: 40px;
+    text-align: center;
+    text-decoration: underline;
+    
+}
+
+.box-item {
+    display: flex;
+    margin-bottom: 25px;
+    border-bottom: 1px solid gray;
+
+}
+
+.box-item img {
+    width: 150px;
+
+}
+
+.box-item p {
+    text-align: center;
+    
+}
+
+span {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#oos {
+    color: red;
+}
+
+
+
+.employees-container {
+    display: block;
+    background-color: green;
+    color: lightgray;
+    
+}
+
+.employee-item {
+    width: 100%;
+    border-bottom: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    padding: 15px 0px;
+}
+
+.employee-item p, img {
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+} 
+
+.employee-item img {
+    display: block;
+    height: 200px;
+    width: 200px;
+    border: 1px solid lightgray;
+    border-radius: 50%;
+}
+
+.employees-container h2 {
+    width: 100%;
+    font-size: 40px;
+    text-align: center;
+    padding: 30px 0px;
+    
+}
+
+.footer {
+    color: black;
+    font-size: 12px;
+    text-align: center;
+    font-style: italic;
+}
+
+
+@media only screen and (min-width: 768px) { 
+
+.header {
+    height: 70px;
+}
+
+.logo img {
+    height: 70px;
+    width: auto;
+    float: left;
+    top: 0;
+}
+
+.nav {
+    padding-right: 50px;
+}
+
+
+.navitem a {
+    font-size: 18px;
+}
+
+button { 
+    font-size: 18px;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    height: 500px;
+}
+
+.banner h1 {
+    font-size: 80px;
+    padding-top: 80px;
+   
+    
+}
+
+.mission-container {
+    display: flex;
+}
+
+.left {
+    flex: 1 3 35%;
+    background-color: green;
+    color: lightgray;
+    border-right: 1px solid black;
+    margin: 0;
+    padding: 15px;
+}
+
+.left h2 {
+    font-size: 48px;
+}
+
+.left p {
+    font-size: 30px;
+}
+
+.right {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex: 0 1 65%;
+    padding-right:30px;
+}
+
+.right img {
+   width: 250px;
+   height: 250px;
+}
+
+.service-container img, .service-container2 img {
+    width: 250px;
+    height: 250px;
+}
+
+.products-container h2 {
+    font-size: 48px;
+    padding-top: 50px;
+} 
+
+.box-item {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    
+ }
+
+.box-item img {
+    width: 250px;
+    padding: 10px;
+
+}
+
+.box-item p {
+    font-size: 30px;
+    text-align: justify;
+    padding: 0px 30px 0px 30px;
+}
+
+
+.employees-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: green;
+    color: lightgray;
+    justify-content: space-evenly;
+}
+
+.employees-container h2 {
+    width: 100%;
+    font-size: 48px;
+    text-align: center;
+    text-decoration: underline;
+    padding: 70px 0px;
+    
+}
+
+.employees-container .employee-item {
+    flex: 0 1 30%;
+}
+
+.employee-item  {
+    margin-bottom: 50px;
+}
+
+.employee-item img {
+    height: 300px;
+    width: 300px;
+    border: 1px solid lightgray;
+    border-radius: 50%;
+}
+
+.employee-item p {
+    padding-top: 15px;
+}
+
+}
